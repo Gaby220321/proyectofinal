@@ -1,0 +1,202 @@
+[20:14, 5/12/2023] +54 9 11 5102-6457: body {
+  background-color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background-color: rgb(182, 190, 188);
+  text-align: left;
+  padding: 16px;
+}
+
+nav {
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 100px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(235, 131, 57);
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  background-color: rgb(182, 190, 188);
+  color: rgb(235, 131, 57);
+}
+
+section {
+  margin-bottom: 20px;
+  border: 2px;
+  padding: 20px;
+}
+
+.img-producto {
+  max-width: 100px;
+  height: auto;
+
+}   
+.carousel-img {
+  max-width: none; /
+  width: 100%; /
+  height: auto;
+}
+
+
+
+form {
+  max-width: 400px;
+  margin: auto;
+}
+
+.contact-section {
+  text-align: center;
+  background-color: rgb(182, 190, 188);
+  color: rgb(235, 131, 57);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: rgb(182, 190, 188);
+  color: black;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.contact-card {
+  flex: 1;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 0 5px;
+  box-sizing: border-box;
+}
+
+.contact-card img {
+  width: 50px; /* Ajusta el tamaño según tus necesidades */
+  height: 50px; /* Ajusta el tamaño según tus necesidades */
+  margin-bottom: 10px;
+}
+
+.contact-card p {
+  margin: 0;
+}
+.footer-icons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-icons img {
+  width: 30px; /
+  height: 30px; /
+  margin: 0 10px;
+}
+[20:14, 5/12/2023] +54 9 11 5102-6457: ahi te agregue algunos comentarios
+[20:15, 5/12/2023] +54 9 11 5102-6457: el index.html con las correcciones que te hice debería verse asi:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luz del Alma</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="estilos.css"> 
+</head>
+
+<body>
+  <header>
+      <!--h1 y p son parte del logo-->
+      <h1>LUZ DEL ALMA</h1>
+      <P>Vintage & Second hand</P>
+      <nav>
+          <ul>
+              <li><a href="Inicio.html">Inicio</a></li>
+              <li><a href="Disponibles.html">Disponibles</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+              <li><a href="Politicas de devolucion.html">Politicas de devolucion</a></li>
+          </ul>
+      </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>WE ARE WAITING FOR YOU</h1>
+      <p>Llevar el Vintage & Second hand a otro nivel es nuestro objetivo & lo hacemos junto a vos</p>
+  
+      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img src="img/vintage-26.webp" class="d-block w-100" alt="mujeres-alegres">
+              </div>
+              <div class="carousel-item">
+                  <img src="img/fucsia.png" class="d-block w-100" alt="modeo-sostiene-buzo-color-fucsia">
+              </div>
+              <div class="carousel-item">
+                  <img src="img/gafas.webp" class="d-block w-100" alt="modelo-con-lentes-blancos">
+              </div>
+          </div>
+          <!-- Elimina los elementos <a> para Previous y Next y agrega íconos directamente -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+    </section>
+
+    <section>
+      <h2>COME AS YOU ARE</h2>
+      <p>Lanzamiento de nuestra campaña conceptual 2024, donde ya no hablamos de temporadas que pasan, sino de un carácter que persiste con el tiempo</p>
+      <p>Nos definimos como un espacio con los brazos abiertos y en constante evolución, una marca que recibe a toda persona que quiere expresar su individualidad & no se juzga, sino que se admira y aprende de sí. Te queremos en tu mejor versión, queremos escuchar tu mensaje. Come as you are, we are waiting for you.</p>
+      
+      <div id="carouselExample2" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img src="img/gafasblack.jpg" class="d-block w-100" alt="modelos-con-ropa-vintage">
+              </div>
+              <div class="carousel-item">
+                  <img src="img/gafasyellow.jpg" class="d-block w-100" alt="modelo-con-gafas-amarillas">
+              </div>
+              <div class="carousel-item">
+                  <img src="img/gafasred.webp" class="d-block w-100" alt="modelo-usando-ropa-second-hand">
+              </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+…
